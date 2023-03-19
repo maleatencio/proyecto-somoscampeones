@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 2.80em;}
+h2{font-size: 2.7em,;}
+h3{font-size: 1.5em;}
+p{font-size: 1.25em;}
+
+footer{
+    background-color: #000A23;
+}
+
+span{
+    font-size:  2px;
+    padding: 8px;
+    
+}
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: right;
+    
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    text-align: right;
+    justify-content:end;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header{
+    background-color:rgb(0, 0, 0);
+   
+}
+
+header .logo{
+    margin: 0;
+    padding:25px;
+    color: aliceblue;
+    font-size: 1.35em;
+}
+
+header .nav{
+    display: flex;
+    flex-direction:column;
+    padding-right: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color:aliceblue;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/foto1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+#fechas{
+    padding: 10px;
+    background-color: white;
+    color: white;
+    text-align: center;
+     
+
+}
+
+#fechas .container{
+ text-align: center;
+}
+
+#fechas h2{
+    display: flex;
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
+    margin-top: 0;
+    font-size: 100em,;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+    padding: 100px 0px 20px 0px;
+    
+}
+
+#fechas .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 5px;
+    border-radius:5px ;
+
+}  
+
+.carta:first-child{
+    background-image: url("../assets/img/1978.jpg");
+    width: 300px;
+    height: 200px;
+
+}
+
+.carta:nth-child(2){
+    background-image: url("../assets/img/1986.jpg");
+    width: 300px;
+    height: 200px;
+
+}
+
+.carta:nth-child(3){
+    background-image: url("../assets/img/2022.jpg");
+    width: 300px;
+    height: 200px;
+}
+
+#somos{
+    background-color: white;
+
+}
+
+#somos .container{
+    text-align: center;
+    padding: 50px;
+}
+
+#somos h3{
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+
+
+#hero1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 498px;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/img/headerhistoria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#hero1 h1{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.containerD h2{
+    color: black;
+    font-family: 'Roboto',  sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-transform:initial;
+    font-weight: bold;
+
+}
+
+.containerD p{
+    padding: 20px 100px 20px 50px;
+    color: black;
+    font-family: 'Roboto', serif;
+    text-align: left;
+
+}
+.containerD h2{
+    margin: 30px;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.img-container{
+    padding: 10px;
+    margin: 10px 0px 10px 300px;
+    width: 400px;
+    align-items: center;
+}
+
+.img-container img{
+    width: 400px;
+    align-items: center center;
+   
+}
+
+/* SOBRE ARGENTINA*/
+
+#hero2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/img/headersobre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#titulos img{
+    width: 360px;
+    height: 250px;
+   padding: 20px;
+}
+
+#posters{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;  
+}
+
+.cartaP{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+    
+}
+
+.titulo{
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+
+img{
+    width: 197px;
+    height: 310px;
+}
+  
+
+
+/* EVENTOS */
+#hero4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/agendaAFA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+
+#hero4 h1{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+#calendario{
+    background-color: white;
+    width: 100%;
+    height:200px;
+}
+
+#calendario h2{
+    margin: 2px;
+    padding-left: 40px;
+    padding-top: 40px;
+    font-family: 'Anton', sans-serif;
+    text-transform:uppercase;
+}
+
+#calendario p{
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 60%;
+    font-family: 'Roboto', serif;
+
+}
+
+#grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "mes fecha1 logos";
+}
+ 
+
+
+#grid1{
+grid-area: mes;
+background-color: #000A23;
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(8,1fr);
+    
+}
+
+#grid1 h3{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mes{
+    grid-column: 5/ 6;
+}
+
+#grid2{
+    grid-area: fecha1;
+    background-color:#000A23;
+   
+}
+
+#grid2 h4{
+    color: white;
+    padding-left: 80px;
+    padding-top: 10px;
+   
+    font-family: 'Anton', sans-serif;
+    font-size: 2em ;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+
+#grid3
+{
+    grid-area:logos ;
+    background-color: #000A23;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+
+
+
+#grid3 .logos-uru img{
+    width: 40px;
+    height: 55px;
+}
+
+.logos-uru{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ grid-row: 5 / 7
+    
+   
+    
+}
+
+.logos-uru p{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+#grid3 .logos-arg img{
+    width: 40px;
+    height: 50px;
+}
+
+
+.logos-arg{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    grid-row: 2 / 4;
+}
+
+.logos-arg p{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+#gridSection2{
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 400px;
+}
+
+#vector{
+    background-color: lightblue;
+}
+
+#gridlogos{
+    display: grid;
+    background-color: lightcoral;
+}
+
+#gridlogos .logo-ur img{
+    width: 190px;
+    height: 384px;
+
+}
+
+#gridlogos .logo-ar img{
+    width: 230px;
+    height: 310px;
+
+}
+
+
+#fecha2{
+    background-color: aqua;
+}
+
+
+
+
+
+
+
