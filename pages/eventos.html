@@ -1,30 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/96b926c1ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <p class="logo"></p>
-            <nav>
-                <a href="../index.html">inicio</a>
-                <a href="./historia.html">historia</a>
-                <a href="../pages/sobre.html">sobre argentina</a>
-                <a href="../pages/exp.html">experiencias</a>
-                <a href="../pages/eventos.html">eventos</a>
-            </nav>
-        </div>
-        </header>
     <main>
         <section id="hero4">
-            <h1>próximos eventos <br> de la selección</h1>
-        </section>
+            <header>
+                <!-- <div class="container"> 
+                <img src="./assets/img/foto1.jpg" alt="">
+                </div>  -->
+  
+            <nav>
+                <input type="checkbox" name="" id="toggle">
+  
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <div class="menu4">
+                    <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./historia.html">historia</a></li>
+                    <li><a href="./sobre.html">sobre argentina</a></li>
+                    <li><a href="./exp.html">experiencia</a></li>
+                    <li><a href="./eventos.html">eventos</a></li>
+                    </ul>
+                </div>
+                </nav>
+            </header>
 
+            <div>
+                <h1>proximos eventos<br>de la selección</h1>
+            </div>
+            
+            </section>
+        
         <section id="calendario">
             <h2>el calendario de la seleccion argentina en 2023</h2>
             <p>Según el cronograma dispuesto por la FIFA, los partidos de selecciones este años serán en cinco ventanas dispuestas entre marzo y noviembre.</p>
@@ -51,32 +66,92 @@
     </div>
 
     <div id="gridSection2">
-         <section id="vector">
-         <div class="vector 1"><img src="../assets/img/Vectornext.png" alt=""></div>
-        </section>
 
         <section id="gridlogos">
-        <div class="logo-ar"> <img src="../assets/img/afa3estrellas.png" alt=""></div>
-        </section>
+            <div class="logo-ar"> <img src="../assets/img/afa3estrellas.png" alt=""></div>
+            </section>
 
-        <section id="fecha2">
-        <p> marzo, 23 <br>rosario</p> 
-        <p>17:00</p>
+         <!-- <section id="vector">
+         <div class="vector 1"><img src="../assets/img/Vectornext.png" alt=""></div>
+        </section>  -->
+
+       <section id="fecha2">
+        <div class="vector"><img src="../assets/img/Vectornext.png" alt=""></div>
+        <p>17:00 <br>rosario</p>
+        <div class="vector"><img src="../assets/img/Vectornext2.png" alt=""></div>
+        <!-- <p>17:00</p> -->
+
+
        </section>
 
        <section id="gridlogos"> 
         <div class="logo-ur"><img src="../assets/img/logouru.png" alt=""></div>
        </section>
         
-       <section id="vector">
+       <!-- <section id="vector"> 
         <div class="vector 2"></div>
-        </section>
+        </section>  -->
        
         
 
     </div>
 
+    <div id="griddSection2">
+        <section id="vvector">
+        <div class="vector 1"><img src="../assets/img/Vectornext.png" alt=""></div>
+       </section>
+
+       <section id="griddlogos">
+       <div class="logo-ar"> <img src="../assets/img/afa3estrellas.png" alt=""></div>
+       </section>
+
+       <section id="fechaa2">
+       <p class="marzo"> marzo, 23 <br>rosario</p>
+       <p class="hora">17:00</p>
+      </section>
+
+      <section id="griddlogos"> 
+       <div class="logo-ur"><img src="../assets/img/logouru.png" alt=""></div>
+      </section>
+       
+      <section id="vvector">
+       <div class="vector 2"> <img src="../assets/img/Vectornext2.png" alt=""></div>
+       </section>
+      
+       
+
+   </div>
+
     </main>
+
+    <footer>
+        <div class="col-1">
+            <h3>Información</h3>
+            <a href="#">Sobre</a>
+            <a href="#">Servicios</a>
+            <a href="#">Blog</a>
+            
+        </div>
+    
+        <div class="col-2">
+         <h3>NEWSLETTER</h3>
+         <form>
+            <input type="email" placeholder="tu correo electronico" required> <br>
+            <button type="submit">SUSCRIBIRME</button>
+         </form>
+        </div>
+    
+        <div class="col-3">
+            <h3>Contactanos</h3>
+            <div class="iconos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    
+    </footer>
     
 </body>
 </html>

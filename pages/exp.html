@@ -5,26 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="../css/style.css">
-</head>
+    <script src="https://kit.fontawesome.com/96b926c1ee.js" crossorigin="anonymous"></script>
+  </head>
 <body>
-    <header>
-        <div class="container">
-            <p class="logo"></p>
-            <nav>
-                <a href="../index.html">inicio</a>
-                <a href="../pages/historia.html">historia</a>
-                <a href="../pages/sobre.html">sobre argentina</a>
-                <a href="../pages/exp.html">experiencias</a>
-                <a href="../pages/eventos.html">eventos</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="hero3">
-            <h1> experiencias de los argentinos</h1>
-            <h2>Conocé lo que las personas cuentan <br> cómo fue la experiencia de vivir <br>el mundial</h2>
-        </section>
+  <main>
+      <section id="hero3">
+          <header>
+              <!-- <div class="container"> 
+              <img src="./assets/img/foto1.jpg" alt="">
+              </div>  -->
+
+          <nav>
+              <input type="checkbox" name="" id="toggle">
+
+              <label for="toggle"><i class="material-icons">menu</i></label>
+              <div class="menu3">
+                  <ul>
+                  <li><a href="../index.html">inicio</a></li>
+                  <li><a href="./historia.html">historia</a></li>
+                  <li><a href="./sobre.html">sobre argentina</a></li>
+                  <li><a href="./exp.html">experiencia</a></li>
+                  <li><a href="./eventos.html">eventos</a></li>
+                  </ul>
+              </div>
+              </nav>
+          </header>
+      
+      <div class="tituloExp">
+          <h1> experiencia de los argentinos</h1>
+          <h2>Conocé lo que las personas cuentan <br> como fue la experiencia de vivir el mundial</h2>
+      </div>
+      
+      </section>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide mx-auto">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner d-flex">
+              <div class="carousel-item active">
+                <img src="../assets/img/exp5.webp" class=" w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/exp2.webp" class="w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/exp4.webp" class="w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section id="expe">
             <div class="card"></div>
@@ -45,6 +88,38 @@
         </section>
 
     </main>
+
+    <footer>
+      <div class="col-1">
+          <h3>Información</h3>
+          <a href="#">Sobre</a>
+          <a href="#">Servicios</a>
+          <a href="#">Blog</a>
+          
+      </div>
+  
+      <div class="col-2">
+       <h3>NEWSLETTER</h3>
+       <form>
+          <input type="email" placeholder="tu correo electronico" required> <br>
+          <button type="submit">SUSCRIBIRME</button>
+       </form>
+      </div>
+  
+      <div class="col-3">
+          <h3>Contactanos</h3>
+          <div class="iconos">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+          </div>
+      </div>
+  
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     
 </body>
 </html>

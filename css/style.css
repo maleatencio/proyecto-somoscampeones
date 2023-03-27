@@ -1,69 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
 
 body{
-    background-color:aliceblue;
+    background-color:#F5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-h1{font-size: 2.80em;}
-h2{font-size: 2.7em,;}
-h3{font-size: 1.5em;}
-p{font-size: 1.25em;}
+h1{font-size: 2.5rem;}
+h2{font-size: 2.7rem,;}
+h3{font-size: 1.5rem;}
+p{font-size: 1.25rem;}
 
 footer{
     background-color: #000A23;
 }
 
-span{
-    font-size:  2px;
-    padding: 8px;
-    
-}
 
-.pie{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: right;
-    
-}
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    align-items: right;
-    text-align: right;
-    justify-content:end;
-}
-
-.container{
+#hero{
     max-width: 1400px;
     margin: auto;
 }
 
-
-header .container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 header{
-    background-color:rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+
+    
+   
+   
+   
    
 }
+.menu{
+
+    width: 100%;
+
+    height: 0;
+
+    overflow: hidden;
+    transition: 0.6s;
+    
+
+    
+
+}
+
+.menu ul{
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0.5rem 0;
+   
+
+
+
+}
+
+nav label{
+
+    display: flex;
+    justify-content: flex-start;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+nav #toggle:checked ~ .menu{
+
+    height: 100%;
+
+}
+
+nav #toggle{
+    display: none;
+}
+
+
 
 header .logo{
     margin: 0;
@@ -72,52 +102,77 @@ header .logo{
     font-size: 1.35em;
 }
 
-header .nav{
+nav{
+    width: 100%;
     display: flex;
-    flex-direction:column;
-    padding-right: 20px;
-    text-align: center;
-    padding-bottom: 25px;
+
+    /*flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;*/
+    padding: 1rem;
+    
+   
 }
 
-header a{
-    padding: 5px 12px;
+.menu ul{
+    list-style: none;
+    display: flex;
+  
+    gap: 1rem;
+   
+   
+}
+
+.menu li a{
+    font-size: 1.3rem;
     text-decoration: none;
     color:aliceblue;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
 }
 
 #hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/foto1.jpg");
+    width: 100%;
     height: 90vh;
-    color: white;
-    background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-    )
-    ,url("../assets/img/foto1.jpg");
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-
+    background-position: center;
+   
 }
 
 #hero h1{
+     font-size: 2.5rem;
     color: white;
     font-family: 'Anton', sans-serif;
     text-transform:uppercase;
     text-align: center;
+    margin-top: 7rem;
+    line-height: 100px;
+   
+   
 }
 
+
+
+
+
 #fechas{
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
     background-color: white;
     color: white;
-    text-align: center;
+   
      
 
 }
@@ -128,44 +183,44 @@ header a{
 
 #fechas h2{
     display: flex;
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'Anton', sans-serif;
     margin-top: 0;
-    font-size: 100em,;
+  
    text-align: center;
    align-items: center;
    justify-content: center;
-    padding: 100px 0px 20px 0px;
+    padding: 10rem 0 10rem 0px;
     
 }
 
 #fechas .carta{
     background-position: center;
     background-size: cover;
-    padding: 20px;
-    margin: 5px;
-    border-radius:5px ;
+    padding: 5rem;
+   margin: 0.2rem;
+    border-radius:0.4rem;
 
 }  
 
 .carta:first-child{
     background-image: url("../assets/img/1978.jpg");
-    width: 300px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
 
 }
 
 .carta:nth-child(2){
     background-image: url("../assets/img/1986.jpg");
-    width: 300px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
 
 }
 
 .carta:nth-child(3){
     background-image: url("../assets/img/2022.jpg");
-    width: 300px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
 }
 
 #somos{
@@ -184,33 +239,247 @@ header a{
     text-transform: uppercase;
 }
 
+footer{
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+    background-color: #000A23;
+    color: #F5f5f5;
+}
 
+footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.col-1 a{
+    display: block;
+   margin: 0.5rem;
+    color: #F5f5f5;
+    text-decoration: none;
+    color: #F5f5f5;
+}
+
+form input{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    text-align: center;
+   margin-bottom: 1rem;
+   outline: none;
+   border: none;
+}
+
+form button{
+    background: transparent ;
+    border: 1px solid;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.iconos i{
+    font-size: 1.7rem;
+    margin: 0.5rem;
+
+}
+
+
+
+
+@media(min-width: 768px){
+
+     
+    .nav{
+        width: 100%;
+        
+
+        padding: 1rem;
+       
+    }
+
+    
+    nav .menu{
+     overflow:visible;
+
+    }
+    .menu ul{
+
+        flex-direction: row;
+    
+        align-items: center;
+    
+        justify-content: center;
+    
+        padding: 0.5rem 0;
+    
+    }
+    .nav ul{
+        list-style: none;
+        display: flex;
+      
+        gap: 1.5rem;
+     }
+
+    nav #toggle, nav label{
+
+        display: none;
+        
+        }
+
+        #fechas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0.5rem;
+          
+        }
+    footer{
+        flex-direction: row;
+        gap: 0;
+    }
+
+  .iconos{
+    display: block;
+  }
+
+
+        
+
+}
+
+/*HISTORIA*/
 
 #hero1{
-    display: flex;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+
+.menu1{
+
+    width: 100%;
+
+    height: 0;
+
+    overflow: hidden;
+
+    
+
+}
+
+.menu1 ul{
+
+    flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    height: 498px;
+
+    padding: 0.5rem 0;
+
+
+
+}
+
+#hero1 nav label{
+
+    display: flex;
+    justify-content: flex-start;
+
     color: white;
-    background-image: linear-gradient(
+
+    cursor: pointer;
+
+}
+
+#hero1 nav #toggle:checked ~ .menu1{
+
+    height: 100%;
+
+}
+
+#hero1 nav #toggle{
+    display: none;
+}
+
+
+
+header .logo{
+    margin: 0;
+    padding:25px;
+    color: aliceblue;
+    font-size: 1.35em;
+}
+
+
+
+.menu1 ul{
+    list-style: none;
+    display: flex;
+  
+    gap: 1rem;
+   
+   
+}
+
+.menu1 li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:aliceblue;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+}
+
+#hero1{
+   background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-    ,url("../assets/img/headerhistoria.jpg");
-    background-repeat: no-repeat;
+        ,url("../assets/img/headerhistoria.jpg");
+    width: 100%;
+    height: 90vh;
+   background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
+   
 }
 
 #hero1 h1{
+     font-size: 2.5rem;
     color: white;
     font-family: 'Anton', sans-serif;
     text-transform:uppercase;
     text-align: center;
-    letter-spacing: 3px;
+    margin-top: 7rem;
+    line-height: 100px;
+   
+   
 }
 
 .containerD h2{
@@ -251,27 +520,137 @@ header a{
    
 }
 
+@media(min-width: 768px){
+
+   #hero1 nav .menu1{
+     overflow:visible;
+
+    }
+    .menu1 ul{
+
+        flex-direction: row;
+    
+        align-items: center;
+    
+        justify-content: center;
+        margin: 0;
+    
+        padding: 0.5rem 0;
+    
+    }
+   
+
+    #hero1 nav #toggle,#hero1 nav label{
+
+        display: none;
+        
+        }
+        
+}
+
 /* SOBRE ARGENTINA*/
 
-#hero2{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
+#hero2{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.menu2{
+
     width: 100%;
-    height: 90vh;
-    color: white;
-    background-image: linear-gradient(
+
+    height: 0;
+
+    overflow: hidden;
+
+    
+
+}
+
+.menu2 ul{
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0.5rem 0;
+
+
+
+}
+
+
+
+#hero2 nav #toggle:checked ~ .menu2{
+
+    height: 100%;
+
+}
+
+#hero2 nav #toggle{
+    display: none;
+
+
+}
+
+header .logo{
+    margin: 0;
+    padding:25px;
+    color: aliceblue;
+    font-size: 1.35em;
+}
+
+
+
+.menu2 ul{
+    list-style: none;
+    display: flex;
+    
+  
+    gap: 1rem;
+   
+   
+}
+
+.menu2 li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:aliceblue;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+}
+
+#hero2{
+   background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-    ,url("../assets/img/headersobre.jpg");
-    background-repeat: no-repeat;
+        ,url("../assets/img/headersobre.jpg");
+    width: 100%;
+    height: 90vh;
+   background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+   
 }
+
+#hero2 h1{
+     font-size: 2.5rem;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    margin-top: 7rem;
+    line-height: 100px;
+   
+   
+}
+
+
+
 
 #titulos img{
     width: 360px;
@@ -305,17 +684,223 @@ img{
     width: 197px;
     height: 310px;
 }
-  
 
+@media(min-width: 768px){
+
+    #hero1 header{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+
+     }
+  
+    #hero2 .nav{
+        width: 100%;
+        
+       
+    }
+
+    
+   #hero2 nav .menu2{
+     overflow:visible;
+
+    }
+
+    .menu2 ul{
+
+        flex-direction: row;
+    
+        align-items: center;
+    
+        justify-content: center;
+        margin: 0;
+    
+        padding: 0.5rem 0;
+    
+    }
+     #hero2 .nav ul{
+        list-style: none;
+        display: flex;
+      
+        gap: 1.5rem;
+     }
+
+    #hero2 nav #toggle,#hero2 nav label{
+
+        display: none;
+        
+        }
+        
+}
+
+  
+/* EXPERIENCIAS*/
+#hero3{
+   
+    gap: 1rem;
+    width: 100%;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../assets/img/headerexpe.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+    .tituloExp{
+        display: flex;
+        flex-direction: column;
+       padding-top: 18rem;
+    
+    }
+
+    #hero3 h1{
+        padding-left: 1rem;
+        color: white;
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+        text-transform:uppercase;
+        text-align:left;
+       
+       
+
+    }
+
+    #hero3 h2{
+        color: white;
+        font-family: 'Anton', sans-serif;
+        text-align: start;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+        
+    }
+
+    .menu3{
+
+        width: 100%;
+    
+        height: 0;
+    
+        overflow: hidden;
+        position: fixed;
+        top: 2rem;
+        left: -27%;
+        z-index: 999;
+    
+        
+    
+    }
+    
+    .menu3 ul{
+        display: flex;
+    
+        flex-direction: column;
+    
+        align-items: center;
+    
+        justify-content: center;
+    
+        padding: 0.5rem 0;
+    
+    
+    
+    }
+    
+    
+    
+    nav #toggle:checked ~ .menu3{
+    
+        height: 100%;
+    
+    }
+    
+    nav #toggle{
+        display: none;
+    }
+    
+    
+    
+    header .logo{
+        margin: 0;
+        padding:25px;
+        color: aliceblue;
+        font-size: 1.35em;
+    }
+    
+    
+    
+    .menu3 ul{
+        list-style: none;
+        display: flex;
+      
+        gap: 1rem;
+       
+       
+    }
+    
+    .menu3 li a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        color:aliceblue;
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .slide{
+        padding: 20px;
+    }
+
+    .carousel-inner img{
+        width: 270px;
+        height: 200px;
+    }
+
+    @media(min-width:768px){
+
+        .menu3{
+            position: static;
+          
+            overflow: visible;
+        }
+
+        .menu3 ul{
+          
+            flex-direction: row;
+        
+            align-items: center;
+        
+            justify-content: center;
+            margin: 0;
+            
+        
+            padding: 0.5rem 0;
+        
+        }
+
+        .slide{
+            margin: 0;
+            width: 60%;
+            height: 350px;
+        
+        }
+
+        .carousel-inner img{
+            width: 600px;
+            height: 320px;
+        }
+    }
 
 /* EVENTOS */
 #hero4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    height: 90vh;
+  
+    gap: 1rem;
+    width: 100%;
+    height: 80vh;
     color: white;
     background-image: linear-gradient(
     0deg,
@@ -327,172 +912,475 @@ img{
     background-size: cover;
     background-position: center center;   
 }
+   
+    
 
-#hero4 h1{
-    color: white;
-    font-family: 'Anton', sans-serif;
-    text-transform:uppercase;
-    text-align: center;
-}
+   
 
-#calendario{
-    background-color: white;
+    #hero4 h1{
+        padding-left: 1rem;
+        color: white;
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+        text-transform:uppercase;
+        text-align: center;
+        margin-top: 7rem;
+        line-height: 100px;
+        
+       
+       
+
+    }
+
+  .menu4{
+
+        width: 100%;
+    
+        height: 0;
+    
+        overflow: hidden;
+       
+      
+    
+        
+    
+    }
+    
+    .menu4 ul{
+        display: flex;
+    
+        flex-direction: column;
+    
+        align-items: center;
+    
+        justify-content: center;
+    
+        padding: 0.5rem 0;
+    
+    
+    
+    }
+    
+    
+    
+    nav #toggle:checked ~ .menu4{
+    
+        height: 100%;
+    
+    }
+    
+    nav #toggle{
+        display: none;
+    }
+    
+    
+    
+    header .logo{
+        margin: 0;
+        padding:25px;
+        color: aliceblue;
+        font-size: 1.35em;
+    }
+    
+    
+    
+    .menu4 ul{
+        list-style: none;
+        display: flex;
+      
+        gap: 1rem;
+       
+       
+    }
+    
+    .menu4 li a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        color:aliceblue;
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+    }
+
+    #calendario{
+        background-color: white;
+        width: 100%;
+        height:300px;
+    }
+    
+    #calendario h2{
+        margin: 2px;
+        padding-left: 20px;
+        padding-top: 40px;
+        font-family: 'Anton', sans-serif;
+        text-transform:uppercase;
+    }
+    
+    #calendario p{
+        margin: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+        font-family: 'Roboto', serif;
+    
+    }
+    
+    #grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+      
+    }
+     
+    
+    
+    #grid1{
+    grid-area: mes;
+    background-color: #000A23;
+    padding: 20px;
+    
+    
+        
+    }
+    
+    #grid1 h3{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .mes{
+        grid-column: 5/ 6;
+    }
+    
+    #grid2{
+        grid-area: fecha1;
+        background-color:#000A23;
+        padding: 25px;
+       
+       
+    }
+    
+    #grid2 h4{
+        color: white;
+        text-align: center;
+       
+        font-family: 'Anton', sans-serif;
+        font-size: 24px ;
+        text-transform: uppercase;
+        
+        
+        
+    }
+    
+    
+    #grid3
+    {
+        grid-area:logos ;
+        background-color: #000A23;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 25px;
+        
+        
+      
+    }
+    
+    
+    
+    
+    #grid3 .logos-uru img{
+        width: 30px;
+        height: 45px;
+    }
+    
+    .logos-uru{
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+        
+       
+        
+    }
+    
+    .logos-uru p{
+        color: white;
+        font-family:'Oswald', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    #grid3 .logos-arg img{
+        width: 30px;
+        height: 40px;
+    }
+    
+    
+    .logos-arg{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logos-arg p{
+        color: white;
+        font-family:'Oswald', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    #gridSection2{
+        display: grid;
+        width: 100%;
+        padding-top: 50px;
+        
+    }
+    
+    #gridlogos{
+        
+        background-color: #02152B;
+    }
+    
+    .logo-ar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-ur{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    #gridlogos .logo-ur img{
+       
+        width: 63px;
+        height: 140px;
+    
+    }
+    
+    #gridlogos .logo-ar img{
+        width: 90px;
+        height: 115px;
+    
+    }
+    
+    
+    #fecha2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #02152B;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+    
+    #fecha2 p{
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+    
+    .vector{
+        width: 35px;
+        height: 45px;
+        
+    }
+    
+    .vector img{
+        width: 35px;
+        height: 45px;
+     
+    }
+    
+    #griddSection2{
+        display: none;
+    }
+
+    @media(min-width: 768px) {
+
+        .menu4{
+           
+          
+            overflow: visible;
+        }
+
+        .menu4 ul{
+          
+            flex-direction: row;
+        
+            align-items: center;
+        
+            justify-content: center;
+            margin: 0;
+            
+        
+            padding: 0.5rem 0;
+        
+        }
+
+        
+    #griddSection2{
+        display: none;
+    }
+    header{
+       
+        width: 100%;
+        height: 70px;
+    }
+
+header .navbar{
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  }
+
+
+  header nav{
+    flex-direction: row;
+    padding: 20px;
+  }
+
+ .navbar li a{
+    font-size: 1.5em;
+    
+ }
+
+ #hero4 h1{
+    font-size: 3.5em;
+ }
+
+ #grid{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height:200px;
 }
-
-#calendario h2{
-    margin: 2px;
-    padding-left: 40px;
-    padding-top: 40px;
-    font-family: 'Anton', sans-serif;
-    text-transform:uppercase;
-}
-
-#calendario p{
-    margin: 10px;
-    padding-left: 30px;
-    padding-right: 60%;
-    font-family: 'Roboto', serif;
-
-}
-
-#grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px;
-    grid-template-areas: 
-    "mes fecha1 logos";
-}
- 
-
 
 #grid1{
-grid-area: mes;
-background-color: #000A23;
-display: grid;
-grid-template-columns: repeat(8, 1fr);
-grid-template-rows: repeat(8,1fr);
-    
-}
-
-#grid1 h3{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.mes{
-    grid-column: 5/ 6;
+    width: 33%;
 }
 
 #grid2{
-    grid-area: fecha1;
-    background-color:#000A23;
-   
+    width: 34%;
 }
 
-#grid2 h4{
-    color: white;
-    padding-left: 80px;
-    padding-top: 10px;
-   
-    font-family: 'Anton', sans-serif;
-    font-size: 2em ;
-    text-transform: uppercase;
-    
-    
-    
+#grid3{
+    width: 33%;
 }
 
-
-#grid3
-{
-    grid-area:logos ;
-    background-color: #000A23;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
-}
-
-
-
-
-#grid3 .logos-uru img{
-    width: 40px;
-    height: 55px;
-}
-
-.logos-uru{
- display: flex;
- flex-direction: row;
- gap: 10px;
- grid-row: 5 / 7
-    
-   
-    
-}
-
-.logos-uru p{
-    color: white;
-    font-family:'Oswald', sans-serif;
-    text-transform: uppercase;
-}
-
-#grid3 .logos-arg img{
-    width: 40px;
-    height: 50px;
-}
-
-
-.logos-arg{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    grid-row: 2 / 4;
-}
-
-.logos-arg p{
-    color: white;
-    font-family:'Oswald', sans-serif;
-    text-transform: uppercase;
-}
-
-#gridSection2{
-    display: grid;
-    width: 100%;
-    
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 400px;
-}
-
-#vector{
-    background-color: lightblue;
-}
-
-#gridlogos{
-    display: grid;
-    background-color: lightcoral;
+#fecha2 p{
+    font-size: 35px;
+    padding: 20px;
 }
 
 #gridlogos .logo-ur img{
-    width: 190px;
-    height: 384px;
+   
+    width: 148px;
+    height: 257px;
 
 }
 
 #gridlogos .logo-ar img{
-    width: 230px;
-    height: 310px;
+    width: 180px;
+    height: 220px;
+
+}
+
+#gridSection2{
+    width: 100%;
+}
+
+
+
+}
+
+@media(min-width: 1000px){
+
+    #gridSection2{
+        display: none;
+    }
+
+    #griddSection2{
+        display: grid;
+        padding-top: 100px;
+        width: 100%;
+     grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 400px;
+    }
+    
+    #vvector{
+        display: grid;
+        align-items: center;
+        background-color: #02152B;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .vector{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    #griddlogos{
+        display: grid;
+        background-color: #02152B;
+    }
+    
+    #griddlogos .logo-ur img{
+        width: 190px;
+        height: 384px;
+    
+    }
+    
+    #griddlogos .logo-ar img{
+        width: 230px;
+        height: 310px;
+    
+    }
+    
+    
+    #fechaa2{
+        padding: 20px;
+        gap: 100px;
+        background-color: #02152B;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fechaa2 p{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    }
+
+    .marzo{
+        font-size: 1em;
+    }
+    
+    .hora{
+        font-size: 2.5em;
+    }
+    
+    
+
+
+
 
 }
 
 
-#fecha2{
-    background-color: aqua;
-}
+    
+    
+
+
 
 
 
