@@ -1,0 +1,57 @@
+#fechas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    background-color: white;
+    color: white;
+    h2{
+        display: flex;
+        font-size: 3rem;
+        font-family: 'Anton', sans-serif;
+        margin-top: 0;
+      
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+        padding: 10rem 0 10rem 0px;
+    }
+    .carta{
+        background-position: center;
+        background-size: cover;
+        padding: 5rem;
+       margin: 0.2rem;
+        border-radius:0.4rem;
+    }
+    .carta:first-child{
+        background-image: url("../assets/img/1978.jpg");
+        width: 20rem;
+        height: 20rem;
+    
+    }
+    
+    .carta:nth-child(2){
+        background-image: url("../assets/img/1986.jpg");
+       @extend .carta:first-child
+    
+    }
+    
+    .carta:nth-child(3){
+        background-image: url("../assets/img/2022.jpg");
+        @extend .carta:first-child
+    }
+}
+
+#somos{
+    background-color: white;
+    .container{
+        text-align: center;
+        padding: 50px;
+    }
+    h3{
+        font-family: 'Anton', sans-serif;
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,76 @@
+@media(min-width: 1000px){
+  /*sobre argentina*/
+  #titulos {
+    margin: 5px;
+   
+    img{
+        margin: 10px;
+        padding: 0 0 0 60px;
+        width: 860px;
+        height: 510px;
+    }
+  }
+
+    /*EVENTOS*/
+    #gridSection2{
+        display: none;
+    }
+
+    #griddSection2{
+        display: grid;
+        padding-top: 100px;
+        width: 100%;
+      grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 400px;
+        #vvector{
+            display: grid;
+            align-items: center;
+            background-color: #02152B;
+            grid-template-columns: repeat(3,1fr);
+            .vector{
+               
+                grid-column-start: 2;
+                grid-column-end: 3;
+                img{
+                    width: 35px;
+                    height: 45px;
+                }
+            }
+        }
+    
+    
+
+    #griddlogos{
+        display: grid;
+        background-color: #02152B;
+    
+
+   
+}
+
+#fechaa2{
+    padding: 20px;
+    gap: 100px;
+    background-color: #02152B;
+    display: flex;
+    flex-direction: column;
+}
+
+#fechaa2 p{
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: white;
+text-align: center;
+
+
+.marzo{
+    font-size: 1em;
+}
+
+.hora{
+    font-size: 2.5em;
+}
+
+ }
+ }
+  }

@@ -1,0 +1,154 @@
+#calendario{
+    width: 100%;
+        height:300px;
+        h2{
+            font-size: 1.8rem;
+            margin: 2px;
+            padding-left: 20px;
+            padding-top: 40px;
+            font-family: 'Anton', sans-serif;
+            text-transform:uppercase;
+        }
+        p{
+        margin: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+        }
+}
+
+#grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    #grid1{
+    background-color: #000A23;
+    padding: 20px;
+    
+    h3{
+        @include hhhh; }
+    .mes{
+        grid-column: 5/ 6;
+    }
+    }
+     }
+
+    #grid2{
+        grid-area: fecha1;
+        background-color:#000A23;
+        padding: 25px;
+       h4{
+        @include hhhh;
+        font-size: 24px; }
+       }
+       
+       #grid3{
+           grid-area:logos ;
+           background-color: #000A23;
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           padding: 25px;
+     
+        .logos-uru{
+         display: flex;
+         flex-direction: row;
+         gap: 10px;
+         align-items: center;
+         justify-content: center;
+         img{
+            width: 30px;
+            height: 45px;
+     }
+        p{
+            color: white;
+            font-family:'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+        
+      }
+        
+        
+        .logos-arg{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        img{
+             width: 30px;
+            height: 40px;
+            }
+        p{
+            color: white;
+            font-family:'Oswald', sans-serif;
+            text-transform: uppercase;
+             }
+           
+     }   
+      }
+       
+
+      #gridSection2{
+        display: grid;
+        width: 100%;
+        padding-top: 50px;
+        #gridlogos{
+        
+            background-color: #02152B;
+        
+        .logo-ar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 90px;
+                height: 115px;
+            
+            }
+            
+        }
+        
+        .logo-ur{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+       
+                width: 63px;
+                height: 140px;
+            
+            }
+        }
+        
+    } 
+    #fecha2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #02152B;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        p{
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+        }
+        .vector{
+            width: 35px;
+            height: 45px;
+            img{
+                width: 35px;
+                height: 45px;
+             
+            }
+            
+        }
+    } 
+     }
+
+     #griddSection2{
+        display: none;
+    }
