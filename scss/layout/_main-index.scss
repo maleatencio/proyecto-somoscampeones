@@ -23,6 +23,10 @@
         padding: 5rem;
        margin: 0.2rem;
         border-radius:0.4rem;
+        
+    }
+    .carta:hover{
+        scale: 1.2;
     }
     .carta:first-child{
         background-image: url("../assets/img/1978.jpg");

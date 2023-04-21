@@ -2,16 +2,43 @@ body{
     background-color: #fff;
 }
 
-.cardd{
+
+
+#vid{
     display: flex;
-    justify-content: center;
+  
+  align-items: center;
+    flex-direction: column;
+     }
+
+.cardd{
+  
     font-family: 'Anton', sans-serif;
     color: black;
     margin: 1px;
-    padding: 5px
+    padding: 5px;
+    --card-border-color: none;
+    h3{
+        text-align: center;
+       
+    }
+    p{
+        margin: 1px;
+        padding: 1rem;
+    }
+      }
+    iframe #youtube{
+      
+        margin: 5px;
+        padding: 1rem;
+      
+        
+    }
+     
+     
    
     
-    }
+
 
 
 .slide{
@@ -28,20 +55,15 @@ body{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: center;
     padding: 0;
     
-    .twitter-tweet{ 
-        
-       display: flex;
-      
-       margin: 0;
-    }
-    .twitter-tweet twitter-tweet-rendered{
-        margin: 0;
-    }
+   
    }
    
-   div{
+   .video{
+    display: flex;
+    justify-content: center;
     
 
    
@@ -53,6 +75,9 @@ body{
    }
  }
 
- iframe{
-    width: 21rem;
+ //FOOTER
+
+ .column-2{
+    flex-grow: 2;
  }
+ 

@@ -8,7 +8,7 @@
     background-position: center;
  
 h1{
-    font-size: 2.5rem;
+    
     color: white;
     font-family: 'Anton', sans-serif;
     text-transform:uppercase;
@@ -21,7 +21,7 @@ h1{
 
 nav{
     width: 100%;
-    display: flex;
+   
 
     /*flex-wrap: wrap;
 
@@ -29,6 +29,7 @@ nav{
 
     align-items: center;*/
     padding: 1rem;
+   
  
  #toggle{
     display: none;
@@ -40,6 +41,7 @@ nav{
     color: white;
 
     cursor: pointer;
+   
  }
  #toggle:checked ~ .menu{
 
@@ -61,6 +63,8 @@ nav{
     height: 0;
 
     overflow: hidden;
+    
+  
   
 
 
@@ -77,7 +81,8 @@ ul{
         display: flex;
       
         gap: 1rem;
-       
+
+      
     
     
     
@@ -88,7 +93,11 @@ ul{
         color:aliceblue;
         font-family: 'Dosis', sans-serif;
         text-transform: uppercase;
+        
 
+    }
+    a:hover{
+        color: black;
     }
 }
 
@@ -157,9 +166,9 @@ ul{
    }
 
    .menu3{
-    position: fixed;
+    position: sticky;
     top: 2rem;
-    left: -27%;
+    left: 0;
     z-index: 999;
     @extend .menu
    }

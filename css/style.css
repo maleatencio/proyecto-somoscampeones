@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +17,7 @@ h2 {
   text-transform: uppercase; }
 
 p {
-  font-family: 'Roboto', serif; }
+  font-family: 'Dosis', sans-serif; }
 
 header {
   width: 100%;
@@ -32,7 +33,7 @@ h3 {
   font-size: 1.5rem; }
 
 p {
-  font-size: 1.25rem; }
+  font-size: 1.3rem; }
 
 #hero, #hero1, #hero2, #hero3, #hero4 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/foto1.jpg");
@@ -42,7 +43,6 @@ p {
   background-size: cover;
   background-position: center; }
   #hero h1, #hero1 h1, #hero2 h1, #hero3 h1, #hero4 h1 {
-    font-size: 2.5rem;
     color: white;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
@@ -51,7 +51,6 @@ p {
     line-height: 100px; }
   #hero nav, #hero1 nav, #hero2 nav, #hero3 nav, #hero4 nav {
     width: 100%;
-    display: flex;
     /*flex-wrap: wrap;
 
     justify-content: center;
@@ -86,6 +85,8 @@ p {
     color: aliceblue;
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase; }
+  .menu a:hover, .menu1 a:hover, .menu2 a:hover, .menu3 a:hover, .menu4 a:hover {
+    color: black; }
 
 #hero1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/headerhistoria.jpg"); }
@@ -123,15 +124,15 @@ p {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/agendaAFA.jpg"); }
 
 .menu3 {
-  position: fixed;
+  position: sticky;
   top: 2rem;
-  left: -27%;
+  left: 0;
   z-index: 999; }
 
 footer {
   margin: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 2.5rem;
   margin-top: 2rem;
   gap: 1.5rem;
   display: flex;
@@ -145,38 +146,34 @@ footer {
       font-weight: 300;
       margin-bottom: 1.5rem;
       letter-spacing: 1px; }
+    footer div a {
+      display: block;
+      margin: 0.5rem;
+      color: #F5f5f5;
+      text-decoration: none;
+      color: #F5f5f5; }
   footer .col-1, footer .col-2, footer .col-3 {
     width: 100%; }
-  footer .col-1 a, footer .col-2 a, footer .col-3 a {
-    display: block;
-    margin: 0.5rem;
-    color: #F5f5f5;
-    text-decoration: none;
-    color: #F5f5f5; }
   footer .col-2 {
     flex-grow: 2; }
-    footer .col-2 input {
-      width: 15rem;
-      height: 2rem;
-      border-radius: 0.2rem;
-      text-align: center;
-      margin-bottom: 1rem;
-      outline: none;
-      border: none; }
-    footer .col-2 button {
-      background: transparent;
-      border: 1px solid;
-      color: #fff;
-      border-radius: 2rem;
-      padding: 0.4rem 2rem;
-      font-size: 1rem; }
-  footer .iconos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    footer .iconos i {
-      font-size: 1.7rem;
-      margin: 0.5rem; }
+  footer input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none; }
+  footer button {
+    background: transparent;
+    border: 1px solid;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.4rem 2rem;
+    font-size: 1rem; }
+  footer .iconos i {
+    font-size: 1.7rem;
+    margin: 0.5rem; }
 
 #fechas {
   display: flex;
@@ -200,6 +197,8 @@ footer {
     padding: 5rem;
     margin: 0.2rem;
     border-radius: 0.4rem; }
+  #fechas .carta:hover {
+    scale: 1.2; }
   #fechas .carta:first-child, #fechas .carta:nth-child(2), #fechas .carta:nth-child(3) {
     background-image: url("../assets/img/1978.jpg");
     width: 20rem;
@@ -223,7 +222,7 @@ footer {
   text-align: center; }
   .containerD h2 {
     color: black;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     margin: 30px;
     margin-bottom: 20px;
@@ -233,8 +232,14 @@ footer {
   .containerD p {
     padding: 20px 100px 20px 50px;
     color: black;
-    font-family: 'Roboto', serif;
     text-align: left; }
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .img-container img {
+    width: 30rem; }
 
 #titulos {
   margin: 5px;
@@ -282,13 +287,26 @@ img {
 body {
   background-color: #fff; }
 
-.cardd {
+#vid {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.cardd {
   font-family: 'Anton', sans-serif;
   color: black;
   margin: 1px;
-  padding: 5px; }
+  padding: 5px;
+  --card-border-color: none; }
+  .cardd h3 {
+    text-align: center; }
+  .cardd p {
+    margin: 1px;
+    padding: 1rem; }
+
+iframe #youtube {
+  margin: 5px;
+  padding: 1rem; }
 
 .slide {
   padding: 20px; }
@@ -302,21 +320,20 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  justify-content: center;
   padding: 0; }
-  #expe .twitter-tweet {
-    display: flex;
-    margin: 0; }
-  #expe .twitter-tweet twitter-tweet-rendered {
-    margin: 0; }
 
-div video {
-  width: 20rem;
-  padding-left: 1rem;
-  height: 40rem;
-  object-fit: cover; }
+.video {
+  display: flex;
+  justify-content: center; }
+  .video video {
+    width: 20rem;
+    padding-left: 1rem;
+    height: 40rem;
+    object-fit: cover; }
 
-iframe {
-  width: 21rem; }
+.column-2 {
+  flex-grow: 2; }
 
 #calendario {
   width: 100%;
@@ -443,6 +460,12 @@ iframe {
     height: 440px; } }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 4rem; }
+  h2 {
+    font-size: 3rem; }
+  p {
+    font-size: 1.5rem; }
   nav {
     width: 100%;
     padding: 1rem; }
@@ -485,6 +508,41 @@ iframe {
       align-items: center; }
     #posters .p {
       display: grid; }
+  /*EXPERIENCIA*/
+  .tituloExp {
+    padding-top: 35rem; }
+  .menu3 {
+    position: static;
+    overflow: visible; }
+    .menu3 ul {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5rem 0; }
+  .cardd h3 {
+    font-size: 2rem; }
+  .cardd p {
+    margin: 5px; }
+  .slide {
+    margin: 0;
+    width: 70%;
+    height: 350px; }
+    .slide .carousel-inner img {
+      width: 600px;
+      height: 320px; }
+  #expe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem; }
+    #expe .twitter-tweet {
+      max-width: 400px; }
+  .video video {
+    width: 600px;
+    height: 480px;
+    padding-left: 1rem;
+    object-fit: cover; }
   /*EVENTOS*/
   #griddSection2 {
     display: none; }
@@ -519,6 +577,11 @@ iframe {
       padding: 0 0 0 60px;
       width: 860px;
       height: 510px; }
+  /*EXPERIENCIA*/
+  .slide {
+    height: 420px; }
+    .slide .carousel-inner img {
+      height: 400px; }
   /*EVENTOS*/
   #gridSection2 {
     display: none; }
